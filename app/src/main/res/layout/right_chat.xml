@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:id="@+id/user_side"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="7dp">
+    <TextView
+        android:id="@+id/show_message"
+        android:selectAllOnFocus="true"
+        android:textIsSelectable="true"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rightbg"
+        android:text="Solve Your Queries with ChatBot"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="10dp"
+        android:layout_toLeftOf="@+id/sendbtn"
+        />
+    <ImageView
+        android:id="@+id/sendbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/user"
+        app:tint="@color/white" />
+    
+</RelativeLayout>
+
+
+
+</RelativeLayout>

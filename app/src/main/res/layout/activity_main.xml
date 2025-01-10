@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:src="@drawable/chatbot"
+            />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:text="@string/app_description"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="14dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chatbtn"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="#131070"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:src="@drawable/online_chat"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat with bot"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="6dp"
+                android:textSize="14dp"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imagebtn"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#131070"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:src="@drawable/voicetoimg"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generate Image"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="6dp"
+                android:textSize="14dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
